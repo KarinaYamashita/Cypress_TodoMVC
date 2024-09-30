@@ -4,6 +4,9 @@ Esse repositório contém uma aplicação para testes e2e para o website: **[tod
 
 ![alt text](/READMEImage/image.png)
 
+Resultados obtidos:
+![alt text](/READMEImage/report.png)
+
 ## Estrutura
 
 Para o desenvolvimento deste projeto a estrutura de diretórios é:
@@ -34,6 +37,16 @@ Utilizando o Terminal/Console:
 3. Execute o comando: `npm init`
 
 4. Execute o comando: `npm run cy:open`
+
+## Gerando report
+Para gerar o report no formato exibido na imagem abaixo. Insira os seguites comandos no terminal:
+1. npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
+
+2. npx marge mochawesome.json
+
+![alt text](/READMEImage/prettyReport.png)
+
+Referência utilizada: https://docs.cypress.io/guides/tooling/reporters#Reporter-Options
 
 ## Autora :princess:
 
